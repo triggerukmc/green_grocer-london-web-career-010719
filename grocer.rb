@@ -36,7 +36,6 @@ end
 
 
 def apply_clearance(cart:[])
-  # code here	  # code here
   cart.each do |item_name, item_data|
     if item_data[:clearance]
       item_data[:price] = (item_data[:price] * 0.8).round(1)
@@ -46,7 +45,6 @@ end
 
 
 def checkout(cart: [], coupons: [])
-  # code here	  # code here
   cart = consolidate_cart(cart: cart)
   cart = apply_coupons(cart: cart, coupons: coupons)
   cart = apply_clearance(cart: cart)
