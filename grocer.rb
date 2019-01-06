@@ -10,7 +10,7 @@ def consolidate_cart(cart)
     end
   end
    consolidated_cart
-end	end
+end
 
 
  def apply_coupons(cart, coupons)	def apply_coupons(cart, coupons)
@@ -33,7 +33,7 @@ end	end
     end
   end
   cart
-end	end
+end
 
 
  def apply_clearance(cart)	def apply_clearance(cart:[])
@@ -43,7 +43,7 @@ end	end
       item_data[:price] = (item_data[:price] * 0.8).round(1)
     end
   end
-end	end
+end
 
 
  def checkout(cart, coupons)	def checkout(cart: [], coupons: [])
